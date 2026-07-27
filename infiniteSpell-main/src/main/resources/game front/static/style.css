@@ -1,0 +1,98 @@
+@import url("../static/an.css");
+
+body {
+    background: #160a66;
+    background:var(--background);
+    height: 100vh; 
+    margin: 0;
+
+    display: flex;
+    flex-direction: column; 
+    align-items: center;     
+    justify-content: flex-start; 
+    padding-top: 20px; 
+}
+
+:root {
+    --solid_background: #11011c;
+    --background: linear-gradient(0deg, rgb(10, 3, 56) 0%, rgb(58, 0, 85) 100%);
+    --alt_background: linear-gradient(0deg, rgb(3, 1, 15) 0%, rgb(87, 0, 127) 100%);
+    --br-main: #e0e0e0; 
+    --white: #ffffff;
+    --shadow:rgba(0, 0, 0, 0.158)
+    --backgrund_deck:linear-gradient(to top, #0f172a, #1e293b);
+   
+}
+
+.logo img {
+    width: 500px; 
+    height: auto; 
+}
+
+.logo {
+    animation-name: fadeInUp, tada;
+    animation-duration: 1s, 1s;
+    animation-delay: 0s, 1s;
+    animation-fill-mode: both;
+    -webkit-animation-name: fadeInUp, tada;
+    -webkit-animation-duration: 1s, 1s;
+    -webkit-animation-delay: 0s, 1s;
+    -webkit-animation-fill-mode: both;
+}
+
+.buttons{
+    padding:90px;
+    display: grid;
+    gap:30px;
+}
+.buttons button {
+    border-radius:30px;
+   color:var(--white);
+    background:transparent;
+    width:200px;
+    height:50px;
+    border-color:var(--br-main);
+    transition: all 0.3s ease;
+}
+.container-btn {
+    
+    position: relative;
+    display: inline-block;
+}
+.penta {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%); 
+    top: -20px;
+    color: #d4af37;
+    font-size: 55px; 
+
+    opacity: 0;
+    transition: all 0.3s ease;
+    z-index: 1; 
+}
+
+/* toda a animação fudida*/
+.buttons button:hover{
+   background: transparent;
+  color: #d4af37;
+  border-color: #d4af37;
+  
+  transform: translateY(-8px);
+  
+  position: relative;
+  z-index: 2;
+  transition: all 0.3s ease;
+}
+.container-btn:hover button {
+    background: transparent;
+    color: #d4af37;
+    border-color: #d4af37;
+    transform: translateY(-8px);
+    box-shadow: 0 10px 20px rgba(212, 175, 55, 0.2);
+}
+.container-btn:hover .penta {
+    opacity: 1;
+    left: 10px; 
+     animation: rotate 2s linear infinite;
+}

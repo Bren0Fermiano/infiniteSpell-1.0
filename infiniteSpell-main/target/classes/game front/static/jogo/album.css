@@ -1,0 +1,140 @@
+    @import url("../style.css");
+    @import url("../an.css");
+    body {
+        background: #160a66;
+        background:var(--background);
+        display: flex;
+        flex-direction: column; 
+        align-items: center;     
+        justify-content: flex-start; 
+        overflow: hidden;
+    
+    }
+
+    .bookcase { 
+        background-color: #4a3306; 
+        border: 5px solid #6b4f0b; 
+        border-radius: 20px;
+        margin-top:0%;
+        position: relative;
+        top: 5px;
+        width: 950px; 
+        height: 500px;
+        
+        
+        display: flex;
+        flex-direction: column;
+    justify-content: space-around; 
+        align-items: center;
+        box-shadow: inset 0 0 80px rgb(0, 0, 0); 
+    }
+
+    .shelf {
+        width: 100%; 
+        height: 10px;
+        background-color: #6b4f0b; 
+        
+        border-bottom: 7px solid #402f04; 
+        box-shadow: 0 10px 45px rgb(0, 0, 0); 
+
+        display: flex;
+        flex-direction:line;
+        align-items:self-end;
+        justify-content: space-around;
+        
+    }
+
+ .btnShelf {
+    position: fixed;
+    top: 50%;  
+    left: 0;
+    width: 100%;   
+    display: flex;
+    flex-direction: row;  
+    justify-content: space-between; 
+    box-sizing: border-box;
+    z-index: 10;        
+ }
+
+/*Estilizaçao foda */
+.btnShelf button {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+}
+    .deck{
+    position: fixed;
+        bottom: 0;
+        left: 0;
+        width: 100vw;
+        height: 200px; 
+        background: linear-gradient(to top, #0f172a, #1e293b);
+        border-top: 4px solid #d4af37;
+    
+        display: flex;
+        flex-direction:line;
+        align-items: center;
+        justify-content: space-around;
+        
+        box-shadow: inset 0 0 80px rgb(0, 0, 0); 
+
+    }
+.cardSlot{ 
+    display: flex;
+    
+    width: 160px; 
+    height: 200px;
+    justify-content: center; 
+    align-items: center; 
+    background-color: #0f172a;
+    border-radius:30px;
+    border:5px,solid,rgb(100, 100, 100);
+    color:rgb(100, 100, 100) ;
+    z-index:1;
+
+}
+    .cardSlot:hover{
+        -webkit-animation: vibrate-3 0.5s linear infinite both;
+        animation: vibrate-3 0.5s linear infinite both;
+        box-shadow: 0 0 15px #ecc33d;
+    }
+
+    .cards{
+        margin: 0%;
+        width: 100px; 
+        height: 140px;  
+        margin-bottom:15px;
+        background-color: #22032a;
+        box-shadow: 20px -11px 12px -2px #000000;
+        border-radius:10px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;  
+        align-items: center;      
+        gap: 8px;
+    }
+    .cards img{
+    height: 70px;
+        width: auto;
+        border-radius: 5px;
+    }
+    .cards span{
+
+        color: antiquewhite;
+        font-size: 12px;          
+        text-align: center;       
+        font-weight: bold;
+    }
+
+    .cards:hover{
+        -webkit-animation: vibrate-3 0.5s linear infinite both;
+        animation: vibrate-3 0.5s linear infinite both;
+    }
+
+    .deck .cards {
+        box-shadow: none !important;
+    
+    }
+
+
+
